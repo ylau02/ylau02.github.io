@@ -206,7 +206,7 @@ to hook up all of the events to elements. -->
 	<button id="optionsVisibilityButton" title="Toggle Options" class="optionsVisibiliyButtonElements hideOptions hidden"></button>
 
 	<div id="options" class="hidden">
-		<img class="logo" width="25px" height="50px" src="Images/VidyoIcon.png"/>
+		<img class="logo" src="Images/VidyoIcon.png"/>
 
 		<form>
 		<div id="optionsParameters">
@@ -236,21 +236,21 @@ to hook up all of the events to elements. -->
 			<input id="resourceId" type="text" placeholder="Conference Reference" value="demoRoom">
 		</p>
 		</div>
-		<p style="display:none">
+		<p>
 			<!-- On page load, this input is filled with a list of all the available cameras on the user's system. -->
 			<label for="cameras">Camera</label>
 			<select id="cameras">
 				<option value='0'>None</option>
 			</select>
 		</p>
-		<p style="display:none">
+		<p>
 			<!-- On page load, this input is filled with a list of all the available microphones on the user's system. -->
 			<label for="microphones">Microphone</label>
 			<select id="microphones">
 				<option value='0'>None</option>
 			</select>
 		</p>
-		<p style="display:none">
+		<p>
 			<!-- On page load, this input is filled with a list of all the available microphones on the user's system. -->
 			<label for="speakers">Speaker</label>
 			<select id="speakers">
@@ -272,14 +272,11 @@ to hook up all of the events to elements. -->
 			</select>
 		</p>
 		</form>
-		<div id="messages">		
+		<div id="messages">
 			<!-- All Vidyo-related messages will be inserted into these spans. -->
 			<span id="error"></span>
 			<span id="message"></span>
 		</div>
-		<iframe src="http://localhost:8080/api"></iframe>
-		Translation:
-		<iframe src="/novowel/video.html"></iframe>
 	</div>
 	<!-- This is the div into which the Vidyo component will be inserted. -->
 	<div id="renderer" class="rendererWithOptions pluginOverlay hidden">
