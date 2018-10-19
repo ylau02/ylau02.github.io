@@ -4,10 +4,14 @@
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="../css/main.css">
-			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<!--	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">-->
+
+		<!--bundle exec jekyll serve-->
 		</head>
 		<body>
-			<nav>
+			<div class="bg1">
+								
+			<nav class="caption">
 	    		<ul>
 	        		<li><a href="/">Home</a></li>
 		        	<li><a href="/about">About</a></li>
@@ -15,18 +19,25 @@
 	        		<li><a href="/blog">Blog</a></li>
 	    		</ul>
 			</nav>
-			<div class="parallax container">
+		</div>
+			<!---<div class="container">-->
+				<div>
 
 			{{ content }}
 
 			</div><!-- /.container -->
+			<div class="bg1">
+				<div>
+					cool
+				</div>
 
+			</div>
 			<footer>
 	    		<ul>
 
 				</ul>
 			</footer>
-		
+
 		</body>
-		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<!--<script type="text/javascript" src="../js/bootstrap.min.js"></script>-->
 	</html>
