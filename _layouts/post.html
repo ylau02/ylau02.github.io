@@ -1,9 +1,37 @@
----
-layout: default
----
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="../../../css/main.css">
+			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		
+		<!--bundle exec jekyll serve-->
+		</head>
+		<body>
+			<div class="bg1">
+								
+			<nav class="caption">
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/contact">Contact</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+	    		</ul>
+			</nav>
+		</div>
+				<div>
+          <h1>{{ page.title }}</h1>
+          <p class="meta">{{ page.date | date_to_string }}</p>
+          
+          <div class="bg2">
+            {{ content }}
+          </div>
+				</div>
+			<footer>
+	    		<ul>
 
-<div class="bg-2">
-  {{ content }}
-</div>
+					</ul>
+			</footer>
+		</body>
+	</html>
