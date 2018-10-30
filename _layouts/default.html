@@ -1,45 +1,20 @@
 <!DOCTYPE html>
 	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="../css/main.css">
-			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-		
-		<!--bundle exec jekyll serve-->
-		</head>
+		{% include head.html %}
 		<body>
-			{% include nav.html %}
-				<div>
-			
-				</div>
 				<div class="bg1">
-					<div>
-						<h1>Introduction</h1>
-						<p>{{ page.sections['intro'] | textilize }}</p>
-					</div>
+						{% include header.html %}
 				</div>
-				<div class="bg2">
-					<div>
-						<h1>This is a div</h1>
+				<div>
 						<p>{{ content }}</p>
-					</div>
+				</div>
+				<div class="bg2">		
+				</div>
+				<div>
+						{% include projects.html %}
 				</div>
 				<div class="bg3">
-					<div>
-						<h1>Conclusion</h1>
-						<p>{{ page.sections['Conclusion'] | textilize }}</p>
-					</div>
+						{% include footer.html %}
 				</div>
-			<footer>
-	    		<ul>
-						<li>
-							<a href="#">LinkedIn</a>
-						</li>
-						<li>
-							<a href="#">Medium</a>
-						</li>
-					</ul>
-			</footer>
 		</body>
 	</html>

@@ -1,5 +1,9 @@
-plugins:
-  - jekyll-coffeescript
+# site settings
+title: Yan's Portfolio Site
+url: http://ylau02.github.io
+github_username: ylau02
 
-sass:
-  style: compact # possible values: nested expanded compact compressed
+# build settings
+include: ['_pages']
+kramdown:
+  input: GFM
