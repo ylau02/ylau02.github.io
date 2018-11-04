@@ -6,16 +6,22 @@
 						{% include intro.html %}
 						{% include header.html %}
 				</div>
-				<div>
-						<p>{{ content }}</p>
+					
+					<section class="content">
+							<p>{{ content }}</p>
+					</section>
+						
+				<div class="bg3">	
+					{% include technologies.html %}
 				</div>
-				<div class="bg2">		
-				</div>
-				<div>
+
+				<section class="content">
 						{% include projects.html %}
-				</div>
-				<div class="bg3">
+				</section>		
+
+				<div class="bg1">
 						{% include footer.html %}
 				</div>
+			
 		</body>
 	</html>

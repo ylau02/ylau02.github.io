@@ -3,10 +3,11 @@ body, html {
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
+  background-color: slategray;
 }
 
 h1 {
-  color: black;
+  color: white;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,7 +18,7 @@ div {
 
 .bg1, .bg2, .bg3 {
   position: relative;
-  opacity: 0.65;
+  opacity: 0.5;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,77 +26,81 @@ div {
 }
 
 .bg1 {
- /* background-image: url("../images/img_background.jpg");*/
+ background-image: url("../images/background/sydney.jpg");
+ /* background-image: url("https://c1.staticflickr.com/3/2949/15479505345_1028c7588f_b.jpg"); */
  background-color: azure;
   min-height: 100%;
 }
 
 .bg2 {
- /* background-image: url("https://www.w3schools.com/howto/img_parallax2.jpg");*/
+ background-image: url("https://www.w3schools.com/howto/img_parallax2.jpg");
  background-color: blanchedalmond;
-  height: 400px;
+  height: 500px;
   
 } 
 
 .bg3 {
-  /*background-image: url("https://www.w3schools.com/howto/img_parallax3.jpg");*/
+  background-image: url("https://www.w3schools.com/howto/img_parallax3.jpg");
   background-color: burlywood;
-  height: 400px;
+  height: 500px;
   
 }
 
 .text {
   position: relative; 
-  background-color: white;
   color: #777;
-  background-color: white;
   text-align: center;
   padding: 50px 80px;
   text-align: justify;
 } 
 
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-nav ul {
-  list-style-type: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: large;
-  background-color: lightgreen;
-  margin: 15%;
-  padding: 5%;
-  overflow: hidden;
-}
-
-nav li {
-  display: inline;
-}
-
-nav li a {
-  color: #000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  background-color: #555;
-  color: white;
-}
-
-nav li .active {
-  background-color: #4CAF50;
-  color: white;
-}
-
 @media only screen and (max-device-width: 1366px) {
   .parallax {
       background-attachment: scroll;
   }
+}
+
+.intro {
+  position: relative; 
+  color: white;
+  text-align: center;
+  padding: 10% 25% 25%;
+  text-align: justify;
+  font-size: larger;
+}
+
+.content {
+  position: relative; 
+  color: #777;
+  background-color: black;
+  text-align: center;
+  padding: 5%;
+  text-align: justify;
+}
+
+.footer {
+  position: relative; 
+  text-align: center;
+  padding: 40% 0% 0% 0%;
+  text-align: justify;
+}
+
+.footer ul {
+  list-style-type: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: large;
+}
+
+.footer li {
+  display: inline;
+}
+
+.footer li a {
+  color: white;
+  text-align: center;
+  padding: 3%;
+  text-decoration: none;
+}
+.footer-icons {
+  width: 3%;
 }
