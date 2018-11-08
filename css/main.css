@@ -26,8 +26,7 @@ div {
 }
 
 .bg1 {
- background-image: url("../images/background/sydney.jpg");
- /* background-image: url("https://c1.staticflickr.com/3/2949/15479505345_1028c7588f_b.jpg"); */
+ background-image: url("../images/background/sydney.JPG");
  background-color: azure;
   min-height: 100%;
 }
@@ -79,10 +78,11 @@ div {
 }
 
 .footer {
-  position: relative; 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  padding: 40% 0% 0% 0%;
-  text-align: justify;
 }
 
 .footer ul {
@@ -98,7 +98,7 @@ div {
 .footer li a {
   color: white;
   text-align: center;
-  padding: 3%;
+  padding: 0% 3% 0% 3%;
   text-decoration: none;
 }
 .footer-icons {
