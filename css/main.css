@@ -16,7 +16,7 @@ div {
   display: block;
 }
 
-.bg1, .bg2, .bg3 {
+.bg1, .bg2, .bg3, .bg-blog {
   position: relative;
   opacity: 0.5;
   background-attachment: fixed;
@@ -31,15 +31,22 @@ div {
   min-height: 100%;
 }
 
-.bg2 {
- background-image: url("https://www.w3schools.com/howto/img_parallax2.jpg");
+.bg-blog {
+ /* background-image: url("https://www.w3schools.com/howto/img_parallax2.jpg"); */
  background-color: blanchedalmond;
   height: 500px;
   
 } 
 
+.bg2 {
+  background-image: url("../images/background/london.JPG");
+  background-color: blanchedalmond;
+   height: 500px;
+   
+ } 
+
 .bg3 {
-  background-image: url("https://www.w3schools.com/howto/img_parallax3.jpg");
+  background-image: url("../images/background/hongkong.JPG");
   background-color: burlywood;
   height: 500px;
   
