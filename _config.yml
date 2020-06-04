@@ -1,9 +1,0 @@
-# site settings
-title: Yan's Portfolio Site
-url: http://ylau02.github.io
-github_username: ylau02
-
-# build settings
-include: ['_pages']
-kramdown:
-  input: GFM
